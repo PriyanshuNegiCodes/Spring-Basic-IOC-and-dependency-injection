@@ -19,6 +19,7 @@ public class App
         ApplicationContext applicationContext=new AnnotationConfigApplicationContext(AppConfig.class);
 
         //bean1 is injected in obj1 is the dependecy injection
+        //As we are getting object from the container it is the case of the loosely coupled or decoupled
         User obj1= (User) applicationContext.getBean("bean1");
         System.out.println(obj1);
 
